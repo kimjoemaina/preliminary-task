@@ -6,5 +6,3 @@ def searchName():
         s = s.strip()
         if s[0] == userInput:
             print(s)
-
-searchName()
