@@ -3,7 +3,8 @@ def searchName():
     userInput = input("Enter a letter to check names: \n").upper()
     infile = open("names.txt", "r")
     for s in infile:
-        if s[:1] == userInput:
+        s = s.strip()
+        if s[0] == userInput:
             print(s)
 
 searchName()
