@@ -2,7 +2,8 @@
 def searchName():
     infile = open("names.txt", "r")
     for s in infile:
-        if s[:1] == "A":
+        s= s.strip()
+        if s[0] == "A":
             print(s)
 
 searchName()
