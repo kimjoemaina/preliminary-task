@@ -2,7 +2,8 @@
 def searchAge():
     infile = open("names.txt", "r")
     for s in infile:
-        if s[-2] == "5":
+        s = s.strip()
+        if s[-1] == "5":
             print(s)
 
 searchAge()
